@@ -12,7 +12,11 @@ coverage.json
 
 # Secrets & local env
 .env
-.env.*
+.env.local
+.env.*.local
+.env.development
+.env.production
+!.env.example
 !.env.example
 ui/.env
 !ui/.env.production
@@ -29,4 +33,11 @@ task2.txt
 .DS_Store
 *.log
 .vercel
-.env*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+!.env.example
